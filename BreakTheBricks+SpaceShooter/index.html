@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Break the Bricks</title>
+</head>
+<body>
+    <div id="parent">
+        <div id="game" style="text-align: center;">
+            <button id="reset" onclick="reset(this)" style="display: none;">
+                RESET
+            </button>
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="main_menu">
+            <div class="menuHeader">
+                <div class="slider">
+                    <marquee behavior="slide" direction="left" scrollamount="50">
+                        Break the Bricks
+                    </marquee>
+                    <p>A simple HTML5 game using WebGL</p>
+                </div>
+            </div>
+            <div class="menuBody">
+                <div class="modes">
+                    <button onclick="start()">
+                        START GAME
+                    </button>
+                </div>
+            </div>
+            <div class="menuFooter">
+                <p>Made by: Wassim Al Haraki</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
